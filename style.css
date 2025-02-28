@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primario: #6C03CA;
+    --secundario: #F7BF4D;
+    --terciario: #F9F9F9;
+    --cuarto: #301C47;
+    --margen-cajas: 20px;
+    --bordes: 2px solid #6C03CA;
+    --radio-bordes: 4px;
+}
