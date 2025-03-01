@@ -24,7 +24,7 @@ body {
 h1{
     font-size: 64px;
     color: var(--terciario);
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.15;
 }
 
@@ -38,6 +38,12 @@ h3{
     font-size: 36px;
     color: var(--terciario);
     font-weight: 200;
+}
+
+h4{
+    font-size: 24px;
+    color: var(--primario);
+    font-weight: 400;
 }
 
 header{
@@ -70,4 +76,145 @@ color: var(--secundario);
 }
 
 
+section#presentacion {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(rgba(5,7,12,0.30), rgba(5,7,12,0.30)),url(img/fondo.png);
+    color: var(--terciario);
+    height: auto;
+    background-size: cover;
+}
 
+section#presentacion button{
+    border: var(--secundario);
+    padding: 10px 20px;
+    background-color:var(--secundario);
+    border-radius: var(--radio-bordes);
+    color: var(--terciario);
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+section#presentacion button:hover{
+    background-color:var(--primario);
+}
+
+
+.area{
+    padding-top: 5rem;
+}
+
+.area h2{
+    color: var(--terciario);
+    font-size: 32px;
+}
+
+section#frase1{
+    background-color: var(--cuarto);
+    height: 15rem;
+    text-align: center;
+
+}
+
+section#frase1 h3{
+    font-weight: 300;
+    padding-top: 2rem;
+}
+
+section#quienes_somos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 80px;
+}
+
+.area_items{
+    margin-left: 15rem;
+    width: 50rem;
+}
+
+.area_items h2{
+    font-weight: 600;
+}
+
+.area_items p{
+    padding-top: 2rem;
+    color: var(--cuarto);
+}
+
+section#quienes_somos img{
+    width: 50%;
+    margin-right: 137px;
+}
+
+
+section#quienes_somos button{
+    border: var(--secundario);
+    padding: 10px 20px;
+    margin-top: 3rem;
+    background-color:var(--primario);
+    border-radius: var(--radio-bordes);
+    color: var(--terciario);
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+section#quienes_somos button:hover{
+    background-color:var(--secundario);
+}
+
+section#servicios{
+    padding: 15px 9%;
+    background-color: var(--terciario);
+    padding-bottom: 4rem;
+}
+
+section#servicios .heading{
+    text-align: center;
+    padding-bottom: 3rem;
+    background: var(--terciario);
+}
+
+section#servicios .servicios_1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 4rem;
+}
+
+
+#servicios .servicios_1 .tarjeta{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px 15px;
+    border-style: groove;
+    border-width: 2px;
+    border-color: var(--primario);
+}
+
+
+.icon img{
+    width: 50px;
+}
+
+
+#servicios .servicios_1 .tarjeta p{
+    color: var(--cuarto);
+}
+
+#servicios .servicios_1 .tarjeta button{
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-style: groove;
+    border-width: 1px;
+    border-color: var(--secundario);
+   
+}
+
+#servicios .servicios_1 .tarjeta button:hover{
+    background-color:var(--secundario);
+}
