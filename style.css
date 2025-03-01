@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding:0;
@@ -14,3 +16,58 @@
     --bordes: 2px solid #6C03CA;
     --radio-bordes: 4px;
 }
+
+body {
+    font-family: "Inter", serif;
+  }
+
+h1{
+    font-size: 64px;
+    color: var(--terciario);
+    font-weight: 300;
+    line-height: 1.15;
+}
+
+h2{
+    font-size: 40px;
+    color: var(--cuarto);
+    font-weight: 200;
+}
+
+h3{
+    font-size: 36px;
+    color: var(--terciario);
+    font-weight: 200;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color:var(--terciario);
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-around; /* eje x */
+    align-items: center; /* eje y */
+}
+
+header img#logo{
+    height: 3rem;
+}
+
+header nav li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+header li a{
+    color: var(--cuarto);
+    list-style: none;
+    text-decoration: none;
+}
+
+header li a:hover{
+color: var(--secundario);
+}
+
+
+
