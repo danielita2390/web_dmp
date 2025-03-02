@@ -14,7 +14,7 @@
     --cuarto: #301C47;
     --margen-cajas: 20px;
     --bordes: 2px solid #6C03CA;
-    --radio-bordes: 4px;
+    --radio-bordes: 7px;
 }
 
 body {
@@ -31,7 +31,7 @@ h1{
 h2{
     font-size: 40px;
     color: var(--cuarto);
-    font-weight: 200;
+   
 }
 
 h3{
@@ -63,6 +63,8 @@ header img#logo{
 header nav li{
     display: inline-block;
     margin-left: 30px;
+    font-weight: 600;
+  
 }
 
 header li a{
@@ -75,6 +77,14 @@ header li a:hover{
 color: var(--secundario);
 }
 
+header ul li img{
+    width: 20px;
+    transition: all 200ms ease;
+}
+
+header ul li img:hover{
+    width: 30px;
+}
 
 section#presentacion {
     text-align: center;
@@ -107,7 +117,8 @@ section#presentacion button:hover{
 
 .area h2{
     color: var(--terciario);
-    font-size: 32px;
+    font-weight: 200;
+
 }
 
 section#frase1{
@@ -145,8 +156,14 @@ section#quienes_somos{
 }
 
 section#quienes_somos img{
-    width: 50%;
+    width: 45%;
     margin-right: 137px;
+    border-radius: 15px;
+    transition: all 900ms ease;
+}
+
+section#quienes_somos img:hover{
+    width: 60%;
 }
 
 
@@ -159,7 +176,7 @@ section#quienes_somos button{
     color: var(--terciario);
     letter-spacing: 2px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 section#quienes_somos button:hover{
@@ -170,6 +187,10 @@ section#servicios{
     padding: 15px 9%;
     background-color: var(--terciario);
     padding-bottom: 4rem;
+}
+
+section#servicios h2{
+    font-weight: 600;
 }
 
 section#servicios .heading{
@@ -191,6 +212,7 @@ section#servicios .servicios_1{
     border-style: groove;
     border-width: 2px;
     border-color: var(--primario);
+    transition: all 300ms ease;
 }
 
 
@@ -199,8 +221,13 @@ section#servicios .servicios_1{
 }
 
 
+
 #servicios .servicios_1 .tarjeta p{
     color: var(--cuarto);
+}
+
+#servicios .servicios_1 .tarjeta:hover{
+    transform: scale(1.05);
 }
 
 #servicios .servicios_1 .tarjeta button{
@@ -218,3 +245,294 @@ section#servicios .servicios_1{
 #servicios .servicios_1 .tarjeta button:hover{
     background-color:var(--secundario);
 }
+
+
+section#frase2{
+    background-color: var(--cuarto);
+    height: 15rem;
+    text-align: center;
+
+}
+
+section#frase2 h3{
+    font-weight: 300;
+    padding-top: 2rem;
+}
+
+section#aliados{
+    background-color: var(--terciario);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.empresas{
+    margin-top: 20px;
+    padding: 40px 0 40px 0;
+}
+
+.empresas ul{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    gap: 5rem;
+}
+
+
+.empresas ul img{
+    width: 10rem; 
+    transition: all 300ms ease;
+}
+
+.empresas ul img:hover{
+    width: 12rem; 
+}
+
+
+section#elegir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.informacion{
+    width: 50rem;
+    margin-left: -18rem;
+}
+
+.informacion h2{
+    font-weight: 600;
+}
+
+.informacion p{
+    padding-top: 2rem;
+    color: var(--cuarto);
+}
+
+section#elegir img{
+    width: 45%;
+    margin-left: 6.25rem;
+    border-radius: 15px;
+    transition: all 900ms ease;
+}
+
+
+section#elegir img:hover{
+    width: 60%;
+}
+
+
+section#elegir button{
+    border: var(--secundario);
+    padding: 10px 20px;
+    margin-top: 3rem;
+    background-color:var(--primario);
+    border-radius: var(--radio-bordes);
+    color: var(--terciario);
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+section#elegir button:hover{
+    background-color:var(--secundario);
+}
+
+
+
+.informacion .puntos h2{
+    color: var(--primario);
+}
+
+::marker{
+    color: var(--primario);
+    font-size: 20px;
+}
+
+
+section#formulario{
+    height: auto;
+    background-color: var(--terciario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5rem;
+ 
+}
+
+.datos-personales h2{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.datos-personales hr{
+    border: solid var(--primario);
+    margin-top: 20px;
+    transform: translate(17%, -50%);
+    width: 500px;
+}
+
+
+.datos-personales p{
+    padding-top: 2rem;
+    color: var(--cuarto);
+    text-align: center;
+}
+
+.datos-personales{
+    margin-left: 150px;
+}
+
+#imagen img{
+    width: 22rem;
+    margin-top: 18rem;
+    translate: -13rem;
+    transition: all 900ms ease;
+    border-radius: 15px;
+}
+
+
+#imagen img:hover{
+    width: 30rem;
+}
+
+.form{
+    margin-top: 30px;
+}
+
+.form input{
+    padding: 15px;
+}
+
+ .form input, .form textarea{
+     display: flex;
+     width:50%;
+     line-height: 28px;
+     border:2px solid var(--secundario);
+     border-radius: var(--radio-bordes);
+ }
+
+
+ label{
+    font-size: 14px;
+    color:  var(--cuarto);
+    font-weight: 500;
+ }
+
+ textarea{
+    translate:  0% 10%;
+ }
+ 
+ .form textarea{
+     min-height: 200px;
+     padding: 21px;
+ }
+ 
+
+.form input{
+    translate:  0% 44%;
+ }
+
+ .form .cta-a{
+    border: 1px solid (var(--cuarto));
+    background: var(--primario);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 8rem;
+}
+ 
+
+.form .cta-a:hover{
+    background-color:var(--secundario);
+}
+
+.area_footer{
+    height: auto;
+    background: var(--secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+
+
+
+.redes-sociales ul{
+     display: flex;
+     justify-content: center;
+     list-style: none;
+     text-decoration: none;
+}
+
+.social-logo{
+    width: 150px;
+    padding: 35px;
+    transition: all 400ms ease;
+}
+
+.social-logo:hover{
+    transform: translateY(-4%);
+}
+
+.footer-creds{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.creditos{
+    padding-bottom: 50px;
+}
+
+.creditos .footer-creds p{
+    font-size: 20px;
+    color: var(--terciario);
+}
+
+
+#wsp{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    z-index: 100;
+    transition: all 300ms ease;
+}
+
+#wsp:hover{
+    transform: translateY(-10%);
+}
+
+
+
+#wspb{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top:10px;
+    right: 30px;
+    text-align: center;
+    z-index: 100;
+    transition: all 300ms ease;
+}
+
+#wspb:hover{
+    transform: translateY(-10%);
+}
+
+
+
