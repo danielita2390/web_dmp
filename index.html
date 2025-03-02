@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Marketing Pro</title>
-  
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
 <header>
-        <div> <a href="">
-            <img src="img/logo_digital.png" alt="logo bertanvisual" id="logo"></a>
-        </div>
-    
-        <nav>
-            <ul>
-                <li class="menu"><a href="#">¿Quiénes somos?</a></li>
-                <li class="menu"> <a href="#servicios">Servicios</a></li>
-                <li class="menu"><a href="#clientes">Clientes</a></li>
-                <li class="menu"> <a href="">¿Por qué elegirnos?</a></li>
-                <li class="menu"><a href="">Contáctanos</a></li>
+        <div class=""> <a href=""> 
+            <img src="img/logo_digital.png" alt="logo bertanvisual" id="logo"></div>
+       
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li><a href="#quienessomos">¿Quiénes somos?</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li> <a href="#porqueelegirnos">¿Por qué elegirnos?</a></li>
+                <li><a href="contactanos">Contáctanos</a></li>
                 <li><img src="img/icono_email.png" alt=""></li>
             </ul>
             <i class="hamburguesa fas fa-bars" id="hamburguesa"></i>
         </nav>
+
+     <!--MENU RESPONSIVE-->
+        <nav id="menu-responsive">
+            <ul class="menu-oculto">
+                <li><a href="#quienessomos">¿Quiénes somos?</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li> <a href="#porqueelegirnos">¿Por qué elegirnos?</a></li>
+                <li><a href="contactanos">Contáctanos</a></li>
+                <li><img src="img/icono_email.png" alt=""></li>
+            </ul>
+        </nav>
+        
 </header>
 
 <section id="presentacion">
@@ -293,7 +305,7 @@
 
 <a href="https://api.whatsapp.com/send?phone=3167953549" target="_blank"><i class="icon-wsp"><img id="wspb" src="img/logo_app.png" alt=""></i></a>
 
-
+<script src="java.js"></script>
 
 </body>
 </html>
