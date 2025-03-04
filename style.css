@@ -53,9 +53,8 @@ header{
     align-items: center; /* eje y */
     padding: 1rem;
     background-color:var(--terciario);
-    margin: 0 30px 0 30px;
+    /*margin: 0 30px 0 30px;*/
     /*gap: 10px;*/
-    
 }
 
 header img#logo{
@@ -63,12 +62,14 @@ header img#logo{
 }
 
 header ul li img{
-    width: 20px;
-    transition: all 200ms ease;
+    width: 25px;
+    transition: all 100ms ease;
+    transform: scale(0.7);
 }
 
+
 header ul li img:hover{
-    width: 30px;
+    transform: scale(1);
 } 
 
 /*Menú de celular*/
@@ -94,7 +95,6 @@ header ul li img:hover{
     cursor: pointer;
     font-size: 1.5rem;
 }
-
 
 #menu-responsive{
     position: fixed;
@@ -180,7 +180,7 @@ section#presentacion button:hover{
 
 
 .area{
-    padding-top: 5rem;
+    padding-top: 80px;
 }
 
 .area h2{
@@ -312,7 +312,6 @@ section#servicios .servicios_1{
     border-style: groove;
     border-width: 1px;
     border-color: var(--secundario);
-   
 }
 
 #servicios .servicios_1 .tarjeta button:hover{
@@ -366,16 +365,19 @@ section#aliados{
 
 
 .empresas ul img{
-    width: 10rem; 
+    width: 160px; 
+    transform: scale(0.7);
     transition: all 300ms ease;
 }
 
+
 .empresas ul img:hover{
-    width: 12rem; 
+    transform: scale(1);
 }
 
 
 section#elegir{
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -397,15 +399,17 @@ section#elegir{
 }
 
 section#elegir img{
-    width: 45%;
+    width: 50%;
     margin-left: 6.25rem;
     border-radius: 15px;
-    transition: all 900ms ease;
+    transform: scale(0.7);
+    transition: all 300ms ease;
 }
 
 
+
 section#elegir img:hover{
-    width: 60%;
+    transform: scale(1);
 }
 
 
@@ -462,7 +466,6 @@ section#formulario{
     width: 500px;
 }
 
-
 .datos-personales p{
     padding-top: 2rem;
     color: var(--cuarto);
@@ -474,16 +477,17 @@ section#formulario{
 }
 
 #imagen img{
-    width: 22rem;
-    margin-top: 18rem;
-    translate: -13rem;
+    width: 400px;
+    margin-top: 288px;
+    translate: -208px;
+    transform: scale(0.7);
     transition: all 900ms ease;
     border-radius: 15px;
 }
 
 
 #imagen img:hover{
-    width: 30rem;
+    transform: scale(1);
 }
 
 .form{
@@ -502,7 +506,6 @@ section#formulario{
      border-radius: var(--radio-bordes);
  }
 
-
  label{
     font-size: 14px;
     color:  var(--cuarto);
@@ -518,7 +521,6 @@ section#formulario{
      padding: 21px;
  }
  
-
 .form input{
     translate:  0% 44%;
  }
@@ -532,7 +534,6 @@ section#formulario{
     width: 8rem;
 }
  
-
 .form .cta-a:hover{
     background-color:var(--secundario);
 }
@@ -548,7 +549,6 @@ section#formulario{
  }
 
 
- 
 .redes-sociales ul{
      display: flex;
      justify-content: center;
@@ -557,7 +557,7 @@ section#formulario{
 }
 
 .social-logo{
-    width: 150px;
+    width: 120px;
     padding: 35px;
     transition: all 400ms ease;
 }
@@ -582,12 +582,11 @@ section#formulario{
     color: var(--terciario);
 }
 
-
 #wsp{
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 30px;
+    top:   389px;
     right: 30px;
     text-align: center;
     z-index: 100;
@@ -599,13 +598,12 @@ section#formulario{
 }
 
 
-
 #wspb{
     position: fixed;
     width: 60px;
     height: 60px;
-    top:135px;
-    right: 30px;
+    top: 389px;
+    right: 142px;
     transition: all 300ms ease;
 }
 
@@ -631,7 +629,6 @@ section#formulario{
     }
 
 }
-
 
 @media(max-width: 768px){
     .menu-lista{
@@ -661,6 +658,18 @@ section#formulario{
     .empresas ul img{
     width: 7rem; 
 }
+}
+
+@media(min-width: 420px){
+    #elegir{
+
+    }
+
+    #elegir img{
+      
+
+    }
+
 }
 
 
