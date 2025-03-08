@@ -10,26 +10,29 @@
 <body>
     
     <nav>
-    <div>
+    <div class="logo_dmp">
         <img src="img/logo_digital.png" alt="Logo mdp">
     </div>
     <div class="container">
         <h1>Recordatorio</h1>
-        <input type="text" name="nuevoRecordatorio" id="nuevoRecordatorio" placeholder="">
+
+<div class="recordatorios">
+
+        <input type="text" name="nuevoRecordatorio" id="nuevoRecordatorio" placeholder=""><br> <br>
         <button class="button" onclick="agregarTarea()">➕ Agregar Tarea</button>
         
-        <input type="text" name="fechaIncial" id="fechaInicial" placeholder="">
+        <input type="text" name="fechaIncial" id="fechaInicial" placeholder=""><br> <br>
         <button class="button" onclick="seleccionarFechaI()"> <i class="fa-regular fa-calendar-minus"></i> Fecha Inicio</button>
 
-        <input type="text" name="fechaFinal" id="fechaFinal" placeholder="">
+        <input type="text" name="fechaFinal" id="fechaFinal" placeholder=""><br> <br>
         <button class="button" onclick="seleccionarFechaF()"><i class="fa-regular fa-calendar-minus"></i> Fecha Final</button>
         <ul id="listadoRecordatorios"></ul>
-
+</div>
         <section class="franjaAmarilla">
             
         </section>
 
-        <footer>
+        <footer class="iconos">
             <ul>
                 <li>Recordatorios</li> <img src="img/Recurso 5recordatorios.png" alt="icono_recordatorio">
                 <li>Grupos</li> <img src="img/Recurso 1grupos.png" alt="icono_grupos">

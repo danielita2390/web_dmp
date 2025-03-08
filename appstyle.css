@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body{
+ 
+    font-family: 'Inter', sans-serif;
+    max-width: 720px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+:root{
+    --primario: #6C03CA;
+    --secundario: #F7BF4D;
+    --terciario: #F9F9F9;
+    --cuarto: #301C47;
+    --margen-cajas: 20px;
+    --bordes: 2px solid #6C03CA;
+    --radio-bordes: 7px;
+}
+
+.container{
+    background-color:var(--terciario);
+    padding: 20px;
+    border-radius: var(--radio-bordes);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.recordatorios{
+    height: auto;
+   max-width: 600px;
+    background-color: var(--terciario);
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 5%;
+    padding-bottom: 80px;
+ 
+}
+
+.button {
+    background:var(--primario);
+    color: var(--terciario);
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: var(--radio-bordes);
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_dmp img{
+    width: 80px;
+  
+}
+.iconos  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.iconos img{
+    width: 30px;
+    margin: 0 10px;
+}
+
+.iconos li{
+
+    list-style: none;
+    
+}
+
+
+
