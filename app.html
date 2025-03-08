@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>App DMP</title>
+    <link rel="stylesheet" href="appstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     
+    <nav>
+    <div>
+        <img src="img/logo_digital.png" alt="Logo mdp">
+    </div>
+    <div class="container">
+        <h1>Recordatorio</h1>
+        <input type="text" name="nuevoRecordatorio" id="nuevoRecordatorio" placeholder="">
+        <button class="button" onclick="agregarTarea()">➕ Agregar Tarea</button>
+        
+        <input type="text" name="fechaIncial" id="fechaInicial" placeholder="">
+        <button class="button" onclick="seleccionarFechaI()"> <i class="fa-regular fa-calendar-minus"></i> Fecha Inicio</button>
+
+        <input type="text" name="fechaFinal" id="fechaFinal" placeholder="">
+        <button class="button" onclick="seleccionarFechaF()"><i class="fa-regular fa-calendar-minus"></i> Fecha Final</button>
+        <ul id="listadoRecordatorios"></ul>
+       
+    </div>
+  
+    </nav>
+    <script src="java.js"></script>
 </body>
 </html>
