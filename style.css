@@ -58,6 +58,8 @@ header img#logo{
     height: 3rem;
 }
 
+
+
 header ul li img{
     width: 25px;
     transition: all 110ms ease;
@@ -81,6 +83,7 @@ header ul li img:hover{
     color: var(--cuarto);
     text-decoration: none;
     padding: 0.5rem;
+    transition: color 0.3s ease;
 }
 
 .menu-lista a:hover{
@@ -120,7 +123,7 @@ header ul li img:hover{
 }
 
 .menu-activo{
-    transform: translateX(250px);
+    transform: translateX(0);
     opacity: 1;
 }
 
@@ -187,7 +190,7 @@ section#presentacion button:hover{
 
 section#frase1{
     background-color: var(--cuarto);
-    height: 15rem;
+    height: 240px;
     text-align: center;
     
 }
@@ -206,8 +209,8 @@ section#quienes_somos{
 }
 
 .area_items{
-    margin-left: 15rem;
-    width: 50rem;
+    margin-left: 240px;
+    width: 800px;
 }
 
 .area_items h2{
@@ -220,14 +223,14 @@ section#quienes_somos{
 }
 
 section#quienes_somos img{
-    width: 45%;
-    margin-right: 137px;
+    width: 70%;
     border-radius: 15px;
     transition: all 900ms ease;
+    transform: scale(0.7);
 }
 
 section#quienes_somos img:hover{
-    width: 60%;
+    transform: scale(1);
 }
 
 
@@ -318,7 +321,7 @@ section#servicios .servicios_1{
 
 section#frase2{
     background-color: var(--cuarto);
-    height: 15rem;
+    height: 240px;
     text-align: center;
 
 }
@@ -364,7 +367,7 @@ section#aliados{
 .empresas ul img{
     width: 160px; 
     transform: scale(0.7);
-    transition: all 300ms ease;
+    transition: all 900ms ease;
 }
 
 
@@ -378,12 +381,12 @@ section#elegir{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 100px;
 }
 
 .informacion{
-    width: 50rem;
-    margin-left: -18rem;
+    width: 800px;
+    margin-left: -470px;
 }
 
 .informacion h2{
@@ -391,16 +394,16 @@ section#elegir{
 }
 
 .informacion p{
-    padding-top: 2rem;
+    padding-top: 32px;
     color: var(--cuarto);
 }
 
 section#elegir img{
     width: 50%;
-    margin-left: 6.25rem;
     border-radius: 15px;
+    transition: all 900ms ease;
     transform: scale(0.7);
-    transition: all 300ms ease;
+    
 }
 
 
@@ -413,7 +416,7 @@ section#elegir img:hover{
 section#elegir button{
     border: var(--secundario);
     padding: 10px 20px;
-    margin-top: 3rem;
+    margin-top: 48px;
     background-color:var(--primario);
     border-radius: var(--radio-bordes);
     color: var(--terciario);
@@ -528,7 +531,7 @@ section#formulario{
     color: #fff;
     border-radius: 4px;
     font-size: 18px;
-    width: 8rem;
+    width: 128px;
 }
  
 .form .cta-a:hover{
@@ -637,7 +640,11 @@ section#formulario{
         display: block !important;
     }
 
-}
+    section#elegir img {
+        margin-left: 0;
+        }
+    }
+     
 
 
 @media(max-width: 800px) {
