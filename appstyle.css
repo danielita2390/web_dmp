@@ -19,23 +19,29 @@ body{
     --radio-bordes: 7px;
 }
 
+h1{
+    color: var(--cuarto);
+    
+}
+
 .container{
+    position: absolute;
     background-color:var(--terciario);
     padding: 20px;
     border-radius: var(--radio-bordes);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 600px;
+ 
 }
 
 .recordatorios{
+    position: relative;
     height: auto;
-   max-width: 600px;
     background-color: var(--terciario);
     display: flex;
-    align-items: left;
-    justify-content: left;
+    justify-content: center;
     padding-top: 5%;
     padding-bottom: 80px;
- 
 }
 
 .button {
@@ -44,36 +50,66 @@ body{
     border: none;
     padding: 10px 15px;
     margin: 5px;
+    margin-bottom: 20px;
     border-radius: var(--radio-bordes);
     cursor: pointer;
     font-size: 16px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
-.logo_dmp img{
-    width: 80px;
-  
+button:hover{
+    background-color: var(--secundario)
 }
-.iconos  {
+
+
+.logo_dmp img{
+    width: 130px;
+    justify-content: left;
+}
+
+.iconos{
+    justify-content: center;
+}
+
+.iconos ul {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-
+    gap: 80px;
 }
 
 .iconos img{
-    width: 30px;
-    margin: 0 10px;
+    width: 35px;
+    /*margin: 0 10px;*/
 }
+
+.iconos img#grupo{
+    width: 40px;
+    /*margin: 0 10px;*/
+}
+
 
 .iconos li{
-
     list-style: none;
-    
+    text-decoration: none;
+  
 }
 
+.iconos .imagenes .recurso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.imagenes{
+    gap: 10px
+}
 
 
