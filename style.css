@@ -233,7 +233,6 @@ section#quienes_somos img:hover{
     transform: scale(1);
 }
 
-
 section#quienes_somos button{
     border: var(--secundario);
     padding: 10px 20px;

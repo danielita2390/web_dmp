@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <nav>
+   
    
 <div class="container">
         <div class="logo_dmp">
@@ -17,29 +17,36 @@
         </div>
 
         <h1>Recordatorios</h1>
+        <hr>
        
-<div class="recordatorios">
 
 <div class="recordatorio">
-
-        <button class="button" onclick="agregarTarea()">➕ Agregar Tarea</button>
-        <input type="text" name="nuevoRecordatorio" id="nuevoRecordatorio" placeholder=""><br> <br>
-        
+        <p>Recordatorio</p>
+        <input type="text" name="nuevoRecordatorio" id="nuevoRecordatorio" placeholder=""><br> <br>   
 </div>
 
 <div class="fecha1">
-        <button class="button" onclick="seleccionarFechaI()">  <i class="fa-regular fa-calendar-minus"></i>  Fecha Inicio</button>
+        <p>Fecha Inicial</p>
         <input type="text" name="fechaInicial" id="fechaInicial" placeholder=""><br> <br>
         
 </div>
 
 <div class="fecha2">
-        <button class="button" onclick="seleccionarFechaF()"><i class="fa-regular fa-calendar-minus"></i> Fecha Final</button>
+        <p>Fecha Final</p>
         <input type="text" name="fechaFinal" id="fechaFinal" placeholder=""><br> <br>
         
-        <ul id="listadoRecordatorios"></ul>
+        
 </div>
 
+<button class="button" onclick="agregarRecordatorio()">Agregar Recordatorio</button>
+
+<div class="recordatorios">
+    <ul id="listadoRecordatorios">
+        <!--<li><span>Tareas prueba</span>
+            <button class="borrar-btn">Eliminar</button>
+       </li>-->
+
+    </ul>
 </div>
      
 
@@ -63,7 +70,7 @@
         </div>
         </footer>
        </div>
-  </nav>
+
     <script src="java.js"></script>
 </body>
 </html>

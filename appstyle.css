@@ -24,6 +24,12 @@ h1{
     
 }
 
+.container hr{
+    border: solid var(--secundario);
+    transform: translate(-37%, -179%);
+    width: 177px;
+}
+
 .container{
     position: absolute;
     background-color:var(--terciario);
@@ -31,7 +37,6 @@ h1{
     border-radius: var(--radio-bordes);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     max-width: 600px;
- 
 }
 
 .recordatorios{
@@ -44,8 +49,13 @@ h1{
     padding-bottom: 80px;
 }
 
+.recordatorio , .fecha1 , .fecha2 p{
+    color: var(--primario);
+    font-weight: 600;
+}
+
 .button {
-    background:var(--primario);
+    background:var(--secundario);
     color: var(--terciario);
     border: none;
     padding: 10px 15px;
@@ -61,7 +71,26 @@ h1{
 }
 
 button:hover{
-    background-color: var(--secundario)
+    background-color: var(--primario)
+}
+
+.recordatorios li{
+    padding: 10px;
+    margin: 5px 0;
+    background-color: var(--primario);
+    border-radius: var(--radio-bordes);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li::marker {
+    content: ' ' !important;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
 }
 
 
@@ -79,12 +108,18 @@ button:hover{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    gap: 80px;
+    gap: 60px;
 }
 
 .iconos img{
-    width: 35px;
+    width: 30px;
+    transition: all 900ms ease;
+    transform: scale(0.7);
     /*margin: 0 10px;*/
+}
+
+.iconos img:hover{
+    transform: scale(1);
 }
 
 .iconos img#grupo{
@@ -96,7 +131,7 @@ button:hover{
 .iconos li{
     list-style: none;
     text-decoration: none;
-  
+
 }
 
 .iconos .imagenes .recurso{
@@ -106,7 +141,6 @@ button:hover{
     justify-content: center;
     gap: 15px;
 }
-
 
 .imagenes{
     gap: 10px
