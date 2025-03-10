@@ -18,4 +18,32 @@ function agregarRecordatorio() {
     const fechaFinal = document.getElementById('fechaFinal');
     const fechaF = fechaFinal.value;
 
-    }
+    const li = document.createElement('li'); // Se crea un elemento <li>
+    
+    li.innerHTML = `
+        <span class="listado">${textoRecordatorio} ${fechaI} ${fechaF}</span>
+        <button class="borrar-btn" onclick="borrarRecordatorio(this)">Eliminar</button>
+    `;
+
+    li.querySelector('span').addEventListener('click', function () {
+        this.parentElement.classList.toggle('completado');
+    });
+
+    listadoRecordatorios.appendChild(li);
+
+    // Limpiar el campo de entrada
+    nuevoRecordatorio.value = "";
+
+    // Guardar en localStorage
+    guardarRecordatoriosEnLocalStorage();
+}
+
+function borrarRecordatorio(boton) {
+    const li = boton.parentElement; // Obtener el <li> que contiene el recordatorio
+    li.remove(); // Eliminar el elemento de la lista
+
+    // Actualizar localStorage
+    guardarRecordatoriosEnLocalStorage();
+}
+
+    
