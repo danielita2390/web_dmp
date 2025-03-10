@@ -44,6 +44,39 @@ function borrarRecordatorio(boton) {
 
     // Actualizar localStorage
     guardarRecordatoriosEnLocalStorage();
+
+    function guardarRecordatoriosEnLocalStorage() {
+        const listadoRecordatorios = document.querySelectorAll("#listadoRecordatorios li");
+        const recordatorios = [];
+    
+        listadoRecordatorios.forEach(li => {
+            recordatorios.push(li.querySelector('.listado').textContent);
+        });
+    
+        localStorage.setItem("recordatorios", JSON.stringify(recordatorios));
+    }
+    
+    function cargarRecordatoriosDesdeLocalStorage() {
+        const listadoRecordatorios = document.getElementById("listadoRecordatorios");
+        const recordatorios = JSON.parse(localStorage.getItem("recordatorios")) || [];
+    
+        recordatorios.forEach(texto => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+                <span class="listado">${texto}</span>
+                <button class="borrar-btn" onclick="borrarRecordatorio(this)">Eliminar</button>
+            `;
+    
+            li.querySelector('span').addEventListener('click', function () {
+                this.parentElement.classList.toggle('completado');
+            });
+    
+            listadoRecordatorios.appendChild(li);
+        });
+    }
+    
+    // Cargar recordatorios almacenados al cargar la página
+    document.addEventListener("DOMContentLoaded", cargarRecordatoriosDesdeLocalStorage);
 }
 
     
